@@ -1,0 +1,114 @@
+﻿文件名,字段名,示例值,中文释义
+grids_yunnan.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+grids_yunnan.csv,lat_c,21.15,网格中心纬度
+grids_yunnan.csv,lon_c,101.75,网格中心经度
+grids_yunnan.csv,lat_min,21.1,网格南边界纬度
+grids_yunnan.csv,lon_min,101.7,网格西边界经度
+static_features.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+static_features.csv,forest_frac,0.9498,林地占比（ESA WorldCover 10 类乔木）
+static_features.csv,dominant_lc,10,
+static_features.csv,elev_mean,1092.558,平均海拔（SRTM，m）
+static_features.csv,slope_mean,16.416,
+static_features.csv,south_aspect_frac,0.268,
+static_features.csv,pop_density,32.663,人口密度（WorldPop，人/km²）
+dist_road.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+dist_road.csv,dist_road_km,3.444,
+dist_settlement.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+dist_settlement.csv,dist_settlement_km,4.791,
+dist_settlement.csv,nearest_place_type,hamlet,
+fire_labels.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+fire_labels.csv,fire_year,2012,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+fire_labels.csv,dekad_seq,14,防火期内旬序号（0—22；特征旬仅 0—21）
+fire_labels.csv,n_fires,4,该网格该旬火点次数
+fire_labels_forest.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+fire_labels_forest.csv,fire_year,2012,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+fire_labels_forest.csv,dekad_seq,14,防火期内旬序号（0—22；特征旬仅 0—21）
+fire_labels_forest.csv,n_fires,4,该网格该旬火点次数
+fire_labels_forest_viirs.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+fire_labels_forest_viirs.csv,fire_year,2013,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+fire_labels_forest_viirs.csv,dekad_seq,19,防火期内旬序号（0—22；特征旬仅 0—21）
+fire_labels_forest_viirs.csv,n_fires,1,该网格该旬火点次数
+fire_labels_next_dekad.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+fire_labels_next_dekad.csv,fire_year,2012,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+fire_labels_next_dekad.csv,dekad_seq,13,防火期内旬序号（0—22；特征旬仅 0—21）
+fire_labels_next_dekad.csv,n_fires,4,该网格该旬火点次数
+fire_labels_viirs_next_dekad.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+fire_labels_viirs_next_dekad.csv,fire_year,2013,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+fire_labels_viirs_next_dekad.csv,dekad_seq,18,防火期内旬序号（0—22；特征旬仅 0—21）
+fire_labels_viirs_next_dekad.csv,n_fires,1,该网格该旬火点次数
+ndvi_dekad.csv,gid,27_1,网格编号（行_列），全链条唯一主键
+ndvi_dekad.csv,fire_year,2009,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+ndvi_dekad.csv,dekad_seq,0,防火期内旬序号（0—22；特征旬仅 0—21）
+ndvi_dekad.csv,ndvi,0.3555,NDVI 旬值（MOD13A2，插补后）
+ndvi_dekad_imputed.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+ndvi_dekad_imputed.csv,fire_year,2009,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+ndvi_dekad_imputed.csv,dekad_seq,0,防火期内旬序号（0—22；特征旬仅 0—21）
+ndvi_dekad_imputed.csv,ndvi,0.8611,NDVI 旬值（MOD13A2，插补后）
+model_dataset.csv,gid,30_4,网格编号（行_列），全链条唯一主键
+model_dataset.csv,fire_year,2013,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+model_dataset.csv,dekad_seq,15,防火期内旬序号（0—22；特征旬仅 0—21）
+model_dataset.csv,y,1,标签：第 t+1 旬是否发生林地火点（1/0）
+model_dataset.csv,tmax7_mean,26.124,
+model_dataset.csv,rh7_mean,64.586,前 7 日平均相对湿度
+model_dataset.csv,wind7_mean,1.194,前 7 日平均风速
+model_dataset.csv,precip7_sum,15.06,前 7 日累计降水量
+model_dataset.csv,dry_days,1,前 7 日无降水日数
+model_dataset.csv,ndvi,0.7896,NDVI 旬值（MOD13A2，插补后）
+model_dataset.csv,forest_frac,0.9211,林地占比（ESA WorldCover 10 类乔木）
+model_dataset.csv,elev_mean,1486.556,平均海拔（SRTM，m）
+model_dataset.csv,slope_mean,16.305,
+model_dataset.csv,south_aspect_frac,0.325,
+model_dataset.csv,pop_density,15.874,人口密度（WorldPop，人/km²）
+model_dataset.csv,dist_road_km,5.667,
+model_dataset.csv,dist_settlement_km,6.196,
+eval_dataset.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+eval_dataset.csv,fire_year,2019,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+eval_dataset.csv,dekad_seq,0,防火期内旬序号（0—22；特征旬仅 0—21）
+eval_dataset.csv,y,0,标签：第 t+1 旬是否发生林地火点（1/0）
+eval_dataset.csv,tmax7_mean,25.793,
+eval_dataset.csv,rh7_mean,79.729,前 7 日平均相对湿度
+eval_dataset.csv,wind7_mean,1.357,前 7 日平均风速
+eval_dataset.csv,precip7_sum,6.15,前 7 日累计降水量
+eval_dataset.csv,dry_days,3,前 7 日无降水日数
+eval_dataset.csv,ndvi,0.5437,NDVI 旬值（MOD13A2，插补后）
+eval_dataset.csv,forest_frac,0.9498,林地占比（ESA WorldCover 10 类乔木）
+eval_dataset.csv,elev_mean,1092.558,平均海拔（SRTM，m）
+eval_dataset.csv,slope_mean,16.416,
+eval_dataset.csv,south_aspect_frac,0.268,
+eval_dataset.csv,pop_density,32.663,人口密度（WorldPop，人/km²）
+eval_dataset.csv,dist_road_km,3.444,
+eval_dataset.csv,dist_settlement_km,4.791,
+model_dataset_viirs.csv,gid,36_1,网格编号（行_列），全链条唯一主键
+model_dataset_viirs.csv,fire_year,2013,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+model_dataset_viirs.csv,dekad_seq,9,防火期内旬序号（0—22；特征旬仅 0—21）
+model_dataset_viirs.csv,y,0,标签：第 t+1 旬是否发生林地火点（1/0）
+model_dataset_viirs.csv,tmax7_mean,21.087,
+model_dataset_viirs.csv,rh7_mean,61.157,前 7 日平均相对湿度
+model_dataset_viirs.csv,wind7_mean,1.391,前 7 日平均风速
+model_dataset_viirs.csv,precip7_sum,0.04,前 7 日累计降水量
+model_dataset_viirs.csv,dry_days,7,前 7 日无降水日数
+model_dataset_viirs.csv,ndvi,0.8216,NDVI 旬值（MOD13A2，插补后）
+model_dataset_viirs.csv,forest_frac,0.8947,林地占比（ESA WorldCover 10 类乔木）
+model_dataset_viirs.csv,elev_mean,1381.231,平均海拔（SRTM，m）
+model_dataset_viirs.csv,slope_mean,16.979,
+model_dataset_viirs.csv,south_aspect_frac,0.212,
+model_dataset_viirs.csv,pop_density,61.176,人口密度（WorldPop，人/km²）
+model_dataset_viirs.csv,dist_road_km,4.817,
+model_dataset_viirs.csv,dist_settlement_km,4.156,
+eval_dataset_viirs.csv,gid,0_42,网格编号（行_列），全链条唯一主键
+eval_dataset_viirs.csv,fire_year,2019,防火年度（2010 = 2010-11 至 2011-06，非自然年；V3 从 2010 起共 14 期）
+eval_dataset_viirs.csv,dekad_seq,0,防火期内旬序号（0—22；特征旬仅 0—21）
+eval_dataset_viirs.csv,y,0,标签：第 t+1 旬是否发生林地火点（1/0）
+eval_dataset_viirs.csv,tmax7_mean,25.793,
+eval_dataset_viirs.csv,rh7_mean,79.729,前 7 日平均相对湿度
+eval_dataset_viirs.csv,wind7_mean,1.357,前 7 日平均风速
+eval_dataset_viirs.csv,precip7_sum,6.15,前 7 日累计降水量
+eval_dataset_viirs.csv,dry_days,3,前 7 日无降水日数
+eval_dataset_viirs.csv,ndvi,0.5437,NDVI 旬值（MOD13A2，插补后）
+eval_dataset_viirs.csv,forest_frac,0.9498,林地占比（ESA WorldCover 10 类乔木）
+eval_dataset_viirs.csv,elev_mean,1092.558,平均海拔（SRTM，m）
+eval_dataset_viirs.csv,slope_mean,16.416,
+eval_dataset_viirs.csv,south_aspect_frac,0.268,
+eval_dataset_viirs.csv,pop_density,32.663,人口密度（WorldPop，人/km²）
+eval_dataset_viirs.csv,dist_road_km,3.444,
+eval_dataset_viirs.csv,dist_settlement_km,4.791,

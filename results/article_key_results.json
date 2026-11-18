@@ -1,0 +1,23 @@
+{
+  "ranking_rule": "calibrated probability descending; raw XGBoost score descending as tie-breaker",
+  "test_n": 173844,
+  "test_positives": 3603,
+  "test_prior": 0.020725478014771863,
+  "XGBoost_AUC_temporal_test": 0.7848060796240431,
+  "XGBoost_PR_AUC_temporal_test": 0.0750739630376831,
+  "XGBoost_Brier_before_calibration": 0.1343194246292114,
+  "XGBoost_Brier_after_calibration": 0.0197220351547002,
+  "Top_k_capture_temporal_test": {
+    "0.05": 0.22620038856508465,
+    "0.1": 0.379406050513461,
+    "0.2": 0.5900638356924784,
+    "0.3": 0.7196780460727171
+  },
+  "spatial_holdout_XGBoost": {
+    "AUC_pooled": 0.6529745044478854,
+    "AUC_macro_mean": 0.6542098020155137,
+    "AUC_fold_min": 0.5585545784270601,
+    "AUC_fold_max": 0.7972177982587355,
+    "Top_20_capture_pooled": 0.3000277546489037
+  }
+}

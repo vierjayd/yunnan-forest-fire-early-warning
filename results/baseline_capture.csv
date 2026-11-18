@@ -1,0 +1,25 @@
+﻿model,model_en,top_frac,n,fires,capture
+仅静态因子,Static-only logistic regression,0.05,8692,371,0.10296974743269498
+仅静态因子,Static-only logistic regression,0.1,17384,676,0.18762142658895364
+仅静态因子,Static-only logistic regression,0.2,34768,1398,0.38800999167360534
+仅静态因子,Static-only logistic regression,0.3,52153,2056,0.5706355814598946
+仅气象因子,Meteorology-only logistic regression,0.05,8692,361,0.10019428254232583
+仅气象因子,Meteorology-only logistic regression,0.1,17384,662,0.18373577574243685
+仅气象因子,Meteorology-only logistic regression,0.2,34768,1234,0.3424923674715515
+仅气象因子,Meteorology-only logistic regression,0.3,52153,1694,0.47016375242853176
+历史网格火点频率,Historical grid fire frequency,0.05,8692,693,0.19233971690258117
+历史网格火点频率,Historical grid fire frequency,0.1,17384,1143,0.3172356369691923
+历史网格火点频率,Historical grid fire frequency,0.2,34768,1895,0.5259505967249515
+历史网格火点频率,Historical grid fire frequency,0.3,52153,2438,0.6766583402719956
+网格×旬历史气候频率,Grid-dekad fire climatology,0.05,8692,843,0.23397169025811823
+网格×旬历史气候频率,Grid-dekad fire climatology,0.1,17384,1333,0.36996946988620594
+网格×旬历史气候频率,Grid-dekad fire climatology,0.2,34768,1833,0.5087427144046628
+网格×旬历史气候频率,Grid-dekad fire climatology,0.3,52153,2332,0.6472384124340828
+上一旬火点状态,Previous-dekad fire state,0.05,8692,657,0.1823480432972523
+上一旬火点状态,Previous-dekad fire state,0.1,17384,983,0.2728281987232862
+上一旬火点状态,Previous-dekad fire state,0.2,34768,1545,0.42880932556203166
+上一旬火点状态,Previous-dekad fire state,0.3,52153,2173,0.6031085206772134
+XGBoost全变量,XGBoost (all predictors),0.05,8692,815,0.22620038856508465
+XGBoost全变量,XGBoost (all predictors),0.1,17384,1367,0.379406050513461
+XGBoost全变量,XGBoost (all predictors),0.2,34768,2126,0.5900638356924784
+XGBoost全变量,XGBoost (all predictors),0.3,52153,2593,0.7196780460727171

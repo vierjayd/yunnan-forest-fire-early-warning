@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.cdsapirc
+.env
+*.token
+.DS_Store

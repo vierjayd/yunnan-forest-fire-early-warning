@@ -1,0 +1,14 @@
+﻿feature,mean_abs_shap
+elev_mean,0.9500663
+rh7_mean,0.47153857
+ndvi,0.32981187
+pop_density,0.31004962
+tmax7_mean,0.27058944
+slope_mean,0.2029894
+wind7_mean,0.19621322
+forest_frac,0.16884968
+precip7_sum,0.14941256
+dist_road_km,0.14862731
+dist_settlement_km,0.120389074
+south_aspect_frac,0.10666195
+dry_days,0.10604017

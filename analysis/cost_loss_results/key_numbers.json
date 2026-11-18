@@ -1,0 +1,21 @@
+{
+  "test_n": 173844,
+  "test_positives": 3603,
+  "test_prior": 0.020725478014771863,
+  "alpha_star_XGB": 0.020701,
+  "REV_max_XGB": 0.42961765299109417,
+  "alpha_star_baseline": 0.020701,
+  "REV_max_baseline": 0.38454957244790183,
+  "REV_max_gain": 0.045068080543192335,
+  "alpha_positive_range_XGB": [
+    0.001,
+    0.195263
+  ],
+  "calibrated_p_max": 0.29411768913269043,
+  "calibrated_unique": 210,
+  "REV_at_alpha_star_XGB": 0.42961765299109417,
+  "REV_at_alpha_star_baseline": 0.38454957244790183,
+  "spatial_pooled_REV_at_alpha_star": 0.10724864778452681,
+  "spatial_pooled_REV_max": 0.10724864778452681,
+  "spatial_fold_REV_mean_at_alpha_star": -0.3157018999717517
+}

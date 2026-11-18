@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the associated manuscript and this archived release."
+title: "A Calibrated Machine-Learning Framework for Forest Fire Early Warning: A Case Study of Yunnan Province, China"
+type: software
+authors:
+  - family-names: Fu
+    given-names: Yujie
+    affiliation: "Nanning Fire and Rescue Mobile Detachment"
+  - family-names: Xu
+    given-names: Feng
+    affiliation: "Nanning Fire and Rescue Mobile Detachment"
+identifiers:
+  - type: url
+    value: "https://github.com/vierjayd/yunnan-forest-fire-early-warning"
+    description: Source repository
+repository-code: "https://github.com/vierjayd/yunnan-forest-fire-early-warning"
+version: 1.0.0
+date-released: "2026-11-18"
+license: MIT
+keywords:
+  - forest fire early warning
+  - probability calibration
+  - spatial cross-validation
+  - cost-loss analysis
+  - risk ranking
+  - Yunnan
+abstract: >-
+  Reproducibility package for a calibrated machine-learning framework that ranks
+  satellite-detectable forest fire hotspots on 0.1 degree forest grids in Yunnan,
+  China. The framework links temporal extrapolation, isotonic calibration, simple
+  baselines, five-fold spatial holdout, and cost-loss decision analysis. It supports
+  retrospective risk ranking, not real-time forecasting or resource dispatch.

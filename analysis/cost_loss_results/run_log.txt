@@ -1,0 +1,59 @@
+重建消融模型与冻结表4一致: static=0.702863 meteo=0.639284
+n=173844 pos=3603 pi=0.02072548
+  XGBoost全变量               pmax=0.2941 unique=210
+  历史网格火点频率                 pmax=0.1591 unique=29
+  网格×旬历史气候频率               pmax=0.4375 unique=7
+  上一旬火点状态                  pmax=0.1485 unique=2
+  仅静态因子逻辑回归                pmax=0.0534 unique=24
+  仅气象因子逻辑回归                pmax=0.0705 unique=66
+
+=== REV 汇总 ===
+        方法  最大REV  最优成本比alpha  最优alpha下预警单元比例  最优alpha下捕获率  最优alpha下精确率  REV为正的alpha下限  REV为正的alpha上限
+XGBoost全变量 0.4296      0.0207          0.2764       0.6975       0.0523         0.0010         0.1953
+  历史网格火点频率 0.3845      0.0207          0.2866       0.6636       0.0480         0.0017         0.0910
+ 仅静态因子逻辑回归 0.3287      0.0207          0.4689       0.7910       0.0350         0.0010         0.0426
+网格×旬历史气候频率 0.3200      0.0207          0.1717       0.4857       0.0586         0.0017         0.2017
+ 仅气象因子逻辑回归 0.1910      0.0207          0.4989       0.6864       0.0285         0.0010         0.0399
+   上一旬火点状态 0.1385      0.0209          0.0207       0.1565       0.1567         0.0017         0.1484
+
+=== 增量 REV 配对 bootstrap（alpha*=0.0207）===
+        alpha  观测dREV  dREV_CI_low  dREV_CI_high   p_双侧   重采样单位  n_boot
+网格聚类   0.0207  0.0451       0.0309        0.0600 0.0000  2634 组     500
+防火年度整块 0.0207  0.0451       0.0392        0.0593 0.0000     3 组     500
+
+=== 空间留出 REV ===
+     空间折   折内先验  正样本  折内最大REV  折内最优alpha  在alpha*下的REV
+       1 0.0105  523   0.2593     0.0105       -0.0704
+       2 0.0080  165   0.0934     0.0080       -0.2400
+       3 0.0430 1322   0.0073     0.0431       -0.9371
+       4 0.0059  206   0.4538     0.0057        0.0314
+       5 0.0369 1387   0.0845     0.0367       -0.3624
+汇总pooled 0.0207 3603   0.1072     0.0207        0.1072
+时间外推在 alpha* 下 REV = 0.4296
+
+=== key_numbers.json ===
+{
+  "test_n": 173844,
+  "test_positives": 3603,
+  "test_prior": 0.020725478014771863,
+  "alpha_star_XGB": 0.020701,
+  "REV_max_XGB": 0.42961765299109417,
+  "alpha_star_baseline": 0.020701,
+  "REV_max_baseline": 0.38454957244790183,
+  "REV_max_gain": 0.045068080543192335,
+  "alpha_positive_range_XGB": [
+    0.001,
+    0.195263
+  ],
+  "calibrated_p_max": 0.29411768913269043,
+  "calibrated_unique": 210,
+  "REV_at_alpha_star_XGB": 0.42961765299109417,
+  "REV_at_alpha_star_baseline": 0.38454957244790183,
+  "spatial_pooled_REV_at_alpha_star": 0.10724864778452681,
+  "spatial_pooled_REV_max": 0.10724864778452681,
+  "spatial_fold_REV_mean_at_alpha_star": -0.3157018999717517
+}
+图注用: pooled spatial REV=0.107 vs temporal 0.430; 4/5 folds negative at alpha* (min -0.94)
+
+图件已写出: E:/workbuddyoutput/2026-10-16-11-07-31/figures/fig_article_cost_loss_value.{png,pdf}
+结果目录: E:/workbuddyoutput/2026-11-10-10-24-23/analysis_materials/cost_loss_results
