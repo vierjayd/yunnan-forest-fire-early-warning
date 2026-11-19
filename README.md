@@ -89,7 +89,7 @@ With the processed datasets supplied here, step 1 can be skipped and step 2 onwa
 
 ## 5. Citation
 
-Please cite the accompanying manuscript and this archived release. Citation metadata are provided in `CITATION.cff` (Zenodo reads this file when archiving a GitHub release). The Zenodo DOI will be inserted after the release is archived; until then, cite the repository URL and version tag `v1.0.0`.
+Please cite the accompanying manuscript and this archived release. Citation metadata are provided in `CITATION.cff` (Zenodo reads this file when archiving a GitHub release). The archived release has DOI `10.5281/zenodo.24338190` (version DOI for v1.0.0; concept DOI `10.5281/zenodo.24338189`); cite this DOI together with the accompanying manuscript.
 
 ## 6. Contact
 
